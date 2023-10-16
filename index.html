@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="web/css/estilos.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%"
+    data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+    <header>
+        <nav id="navbar-example2" class="navbar navbar-expand-md navbar-dark fixed-top"
+            style="background-color: crimson;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="img/LogoSF.png" class="m-0" alt="Logo" width="60" height="45">
+                    JaguarEats
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="nav nav-pills me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link " href="#comida">Comidas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#bebida">Bebidas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#galletas">Galletas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#refrescos">Refrescos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#frituras">Frituras</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#postres">Postres</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-success" type="submit">Buscar</button>
+
+                        <button type="button" class="btn btn-primary position-relative" data-bs-toggle="offcanvas"
+                            href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="·5" fill="currentColor"
+                                class="bi bi-cart-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                            </svg>
+
+                            <span
+                                class="position-absolute top-0 start-100 translate-middle p-2 bg-warning border border-light rounded-circle">
+                                <span class="visually-hidden"></span>
+                            </span>
+                        </button>
+
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <br><br><br>
+
+    <section>
+        <div class="container">
+            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="2000">
+                        <img src="img/img1.jpg" class="rounded mx-auto d-block w-100 " alt="imagen banner 1">
+                        <div class="carousel-caption d-none d-md-block shadow-lg p-3 bg-body rounded-5">
+                            <h3 class="fw-bold">Aprovehca las promociones que tenemos para ti.</h3>
+                            <p>Sabores muy variados.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="img/img2.jpg" class="rounded mx-auto d-block w-100" alt="imagen banner 2">
+                        <div class="carousel-caption d-none d-md-block shadow-lg p-3 bg-body rounded-5">
+                            <h3 class="fw-bold">Aprovehca las promociones que tenemos para ti.</h3>
+                            <p>Sabores muy variados.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="img/img3.jpg" class="rounded mx-auto d-block w-100" alt="imagen banner 3">
+                        <div class="carousel-caption d-none d-md-block shadow-lg p-3 bg-body rounded-5">
+                            <h3 class="fw-bold">Aprovehca las promociones que tenemos para ti.</h3>
+                            <p>Sabores muy variados.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <!-- Comidas -->
+    <div class="container text-center">
+        <div class="row m-2">
+            <h1 class="titulo shadow p-3 mb-3 rounded" id="comida">Comidas</h1>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="card" data-bs-toggle="tooltip" data-bs-placement="top" title="Ver Producto">
+                    <img src="img/Comida/hamburguesa.png" class="card-img-top rounded img-thumbnail" alt="Hamburguesa">
+                    <div class="card-body">
+                        <h5 class="card-title">Hamburguesa doble</h5>
+                        <p class="card-text">$35</p>
+                    </div>
+                    <div class="card-footer">
+                        <p class="card-text">Disponible: 15</p>
+                        <a href="#" class="stretched-link" data-bs-toggle="modal" data-bs-target="#exampleModal"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" data-bs-toggle="tooltip" data-bs-placement="top" title="Ver Producto">
+                    <img src="img/Comida/hamburguesa2.png" class="card-img-top rounded  img-thumbnail"
+                        alt="Hamburguesa2">
+                    <div class="card-body">
+                        <h5 class="card-title">Hamburguesa com papas</h5>
+                        <p class="card-text">$55</p>
+                    </div>
+                    <div class="card-footer">
+                        <p class="card-text">Disponible: 41</p>
+                        <a href="#" class="stretched-link" data-bs-toggle="modal" data-bs-target="#exampleModal"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" data-bs-toggle="tooltip" data-bs-placement="top" title="Ver Producto">
+                    <img src="img/Comida/pizza.png" class="card-img-top rounded mx-auto img-thumbnail"
+                        style="width: 12rem;" alt="pizza2">
+                    <div class="card-body">
+                        <h5 class="card-title">Pizza Vegetales</h5>
+                        <p class="card-text">$85</p>
+                    </div>
+                    <div class="card-footer">
+                        <p class="card-text">Disponible: 54</p>
+                        <a href="#" class="stretched-link" data-bs-toggle="modal" data-bs-target="#exampleModal"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" data-bs-toggle="tooltip" data-bs-placement="top" title="Ver Producto">
+                    <img src="img/Comida/pizza2.png" class="card-img-top rounded mx-auto img-thumbnail"
+                        style="width: 12rem;" alt="Pizza2">
+                    <div class="card-body">
+                        <h5 class="card-title">Pizza Peperoni</h5>
+                        <p class="card-text">$95</p>
+                    </div>
+                    <div class="card-footer">
+                        <p class="card-text">Disponible: 14</p>
+                        <a href="#" class="stretched-link" data-bs-toggle="modal" data-bs-target="#exampleModal"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Bebidas -->
+    <div class="container text-center">
+        <div class="row m-2">
+            <h1 class="titulo shadow p-3 mb-3 rounded" id="bebida">Bebidas</h1>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="card" data-bs-toggle="tooltip" data-bs-placement="top" title="Ver Producto">
+                    <img src="img/Bebidas/horchata.png" class="card-img-top rounded img-thumbnail" alt="Horchata">
+                    <div class="card-body">
+                        <h5 class="card-title">Horchata</h5>
+                        <p class="card-text">$35</p>
+                    </div>
+                    <div class="card-footer">
+                        <p class="card-text">Disponible: 15</p>
+                        <a href="#" class="stretched-link" data-bs-toggle="modal" data-bs-target="#exampleModal"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" data-bs-toggle="tooltip" data-bs-placement="top" title="Ver Producto">
+                    <img src="img/Bebidas/jamaica.png" class="card-img-top rounded  img-thumbnail" alt="Jamaica">
+                    <div class="card-body">
+                        <h5 class="card-title">Jamaica</h5>
+                        <p class="card-text">$35</p>
+                    </div>
+                    <div class="card-footer">
+                        <p class="card-text">Disponible: 15</p>
+                        <a href="#" class="stretched-link" data-bs-toggle="modal" data-bs-target="#exampleModal"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" data-bs-toggle="tooltip" data-bs-placement="top" title="Ver Producto">
+                    <img src="img/Bebidas/limon.png" class="card-img-top rounded mx-auto img-thumbnail"
+                        style="width: 12rem;" alt="Limon">
+                    <div class="card-body">
+                        <h5 class="card-title">Limon</h5>
+                        <p class="card-text">$35</p>
+                    </div>
+                    <div class="card-footer">
+                        <p class="card-text">Disponible: 15</p>
+                        <a href="#" class="stretched-link" data-bs-toggle="modal" data-bs-target="#exampleModal"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" data-bs-toggle="tooltip" data-bs-placement="top" title="Ver Producto">
+                    <img src="img/Bebidas/piña.png" class="card-img-top rounded mx-auto img-thumbnail"
+                        style="width: 12rem;" alt="Piña">
+                    <div class="card-body">
+                        <h5 class="card-title">Piña</h5>
+                        <p class="card-text">$35</p>
+                    </div>
+                    <div class="card-footer">
+                        <p class="card-text">Disponible: 15</p>
+                        <a href="#" class="stretched-link" data-bs-toggle="modal" data-bs-target="#exampleModal"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Galletas -->
+    <div class="container text-center">
+        <div class="row m-2">
+            <h1 class="titulo shadow p-3 mb-3 rounded" id="galletas">Galletas</h1>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="card" data-bs-toggle="tooltip" data-bs-placement="top" title="Ver Producto">
+                    <img src="img/Galletas/deliciosas.jpeg" class="card-img-top rounded img-thumbnail" alt="Horchata">
+                    <div class="card-body">
+                        <h5 class="card-title">Deliciosas</h5>
+                        <p class="card-text">$35</p>
+                    </div>
+                    <div class="card-footer">
+                        <p class="card-text">Disponible: 15</p>
+                        <a href="#" class="stretched-link" data-bs-toggle="modal" data-bs-target="#exampleModal"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" data-bs-toggle="tooltip" data-bs-placement="top" title="Ver Producto">
+                    <img src="img/Galletas/maria.jpeg" class="card-img-top rounded  img-thumbnail" alt="Jamaica">
+                    <div class="card-body">
+                        <h5 class="card-title">Maria</h5>
+                        <p class="card-text">$35</p>
+                    </div>
+                    <div class="card-footer">
+                        <p class="card-text">Disponible: 15</p>
+                        <a href="#" class="stretched-link" data-bs-toggle="modal" data-bs-target="#exampleModal"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" data-bs-toggle="tooltip" data-bs-placement="top" title="Ver Producto">
+                    <img src="img/Galletas/Oreo.jpeg" class="card-img-top rounded mx-auto img-thumbnail"
+                        style="width: 12rem;" alt="Limon">
+                    <div class="card-body">
+                        <h5 class="card-title">Oreo</h5>
+                        <p class="card-text">$35</p>
+                    </div>
+                    <div class="card-footer">
+                        <p class="card-text">Disponible: 15</p>
+                        <a href="#" class="stretched-link" data-bs-toggle="modal" data-bs-target="#exampleModal"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" data-bs-toggle="tooltip" data-bs-placement="top" title="Ver Producto">
+                    <img src="img/Galletas/principe.jpeg" class="card-img-top rounded mx-auto img-thumbnail"
+                        style="width: 12rem;" alt="Piña">
+                    <div class="card-body">
+                        <h5 class="card-title">Principe</h5>
+                        <p class="card-text">$35</p>
+                    </div>
+                    <div class="card-footer">
+                        <p class="card-text">Disponible: 15</p>
+                        <a href="#" class="stretched-link" data-bs-toggle="modal" data-bs-target="#exampleModal"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Refrescos -->
+    <div class="container text-center">
+        <div class="row m-2">
+            <h1 class="titulo shadow p-3 mb-3 rounded" id="refrescos">Refrescos</h1>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="card" data-bs-toggle="tooltip" data-bs-placement="top" title="Ver Producto">
+                    <img src="img/Refresco/coca.png" class="card-img-top rounded img-thumbnail" alt="Horchata">
+                    <div class="card-body">
+                        <h5 class="card-title">Coca</h5>
+                        <p class="card-text">$35</p>
+                    </div>
+                    <div class="card-footer">
+                        <p class="card-text">Disponible: 15</p>
+                        <a href="#" class="stretched-link" data-bs-toggle="modal" data-bs-target="#exampleModal"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card text-center" data-bs-toggle="tooltip" data-bs-placement="top" title="Ver Producto"
+                    style="align-items: center;">
+                    <img src="img/Refresco/fresca.png" class="card-img-top rounded img-thumbnail" alt="Jamaica"
+                        style="width: 8rem; height: 15rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Freca</h5>
+                        <p class="card-text">$35</p>
+                    </div>
+                    <div class="card-footer">
+                        <p class="card-text">Disponible: 15</p>
+                        <a href="#" class="stretched-link" data-bs-toggle="modal" data-bs-target="#exampleModal"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" data-bs-toggle="tooltip" data-bs-placement="top" title="Ver Producto">
+                    <img src="img/Refresco/mirinda.png" class="card-img-top rounded mx-auto img-thumbnail"
+                        style="width: 12rem;" alt="Limon">
+                    <div class="card-body">
+                        <h5 class="card-title">Mirinda</h5>
+                        <p class="card-text">$35</p>
+                    </div>
+                    <div class="card-footer">
+                        <p class="card-text">Disponible: 15</p>
+                        <a href="#" class="stretched-link" data-bs-toggle="modal" data-bs-target="#exampleModal"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" data-bs-toggle="tooltip" data-bs-placement="top" title="Ver Producto">
+                    <img src="img/Refresco/penafiel.png" class="card-img-top rounded mx-auto img-thumbnail"
+                        style="width: 12rem;" alt="Piña">
+                    <div class="card-body">
+                        <h5 class="card-title">Peñafiel</h5>
+                        <p class="card-text">$35</p>
+                    </div>
+                    <div class="card-footer">
+                        <p class="card-text">Disponible: 15</p>
+                        <a href="#" class="stretched-link" data-bs-toggle="modal" data-bs-target="#exampleModal"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Frituras -->
+    <div class="container text-center">
+        <div class="row m-2">
+            <h1 class="titulo shadow p-3 mb-3 rounded" id="frituras">Frituras</h1>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="card" data-bs-toggle="tooltip" data-bs-placement="top" title="Ver Producto">
+                    <img src="img/Frituras/cheetos.jpeg" class="card-img-top mx-auto rounded img-thumbnail"
+                        alt="Horchata">
+                    <div class="card-body">
+                        <h5 class="card-title">Cheetos</h5>
+                        <p class="card-text">$35</p>
+                    </div>
+                    <div class="card-footer">
+                        <p class="card-text">Disponible: 15</p>
+                        <a href="#" class="stretched-link" data-bs-toggle="modal" data-bs-target="#exampleModal"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card text-center" data-bs-toggle="tooltip" data-bs-placement="top" title="Ver Producto">
+                    <img src="img/Frituras/fritos.jpeg" class="card-img-top rounded mx-auto img-thumbnail" alt="Jamaica"
+                        style="width: 11rem; height: 16rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Fritos</h5>
+                        <p class="card-text">$35</p>
+                    </div>
+                    <div class="card-footer">
+                        <p class="card-text">Disponible: 15</p>
+                        <a href="#" class="stretched-link" data-bs-toggle="modal" data-bs-target="#exampleModal"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" data-bs-toggle="tooltip" data-bs-placement="top" title="Ver Producto">
+                    <img src="img/Frituras/rufles.jpeg" class="card-img-top rounded mx-auto img-thumbnail"
+                        style="width: 16rem;" alt="Limon">
+                    <div class="card-body">
+                        <h5 class="card-title">Ruffles</h5>
+                        <p class="card-text">$35</p>
+                    </div>
+                    <div class="card-footer">
+                        <p class="card-text">Disponible: 15</p>
+                        <a href="#" class="stretched-link" data-bs-toggle="modal" data-bs-target="#exampleModal"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" data-bs-toggle="tooltip" data-bs-placement="top" title="Ver Producto">
+                    <img src="img/Frituras/sabritas.jpeg" class="card-img-top rounded mx-auto img-thumbnail"
+                        style="width: 12rem;" alt="Piña">
+                    <div class="card-body">
+                        <h5 class="card-title">Sabrita</h5>
+                        <p class="card-text">$35</p>
+                    </div>
+                    <div class="card-footer">
+                        <p class="card-text">Disponible: 15</p>
+                        <a href="#" class="stretched-link" data-bs-toggle="modal" data-bs-target="#exampleModal"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Postres -->
+    <div class="container text-center">
+        <div class="row m-2">
+            <h1 class="titulo shadow p-3 mb-3 rounded" id="postres">Postres</h1>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="card" data-bs-toggle="tooltip" data-bs-placement="top" title="Ver Producto">
+                    <img src="img/Postres/gelatina.jpg" class="card-img-top rounded img-thumbnail" alt="Horchata">
+                    <div class="card-body">
+                        <h5 class="card-title">Gelatina</h5>
+                        <p class="card-text">$35</p>
+                    </div>
+                    <div class="card-footer">
+                        <p class="card-text">Disponible: 15</p>
+                        <a href="#" class="stretched-link" data-bs-toggle="modal" data-bs-target="#exampleModal"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card text-center" data-bs-toggle="tooltip" data-bs-placement="top" title="Ver Producto">
+                    <img src="img/Postres/pastel.jpg" class="card-img-top rounded img-thumbnail" alt="Jamaica"
+                        style="width: 13rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Pastel</h5>
+                        <p class="card-text">$35</p>
+                    </div>
+                    <div class="card-footer">
+                        <p class="card-text">Disponible: 15</p>
+                        <a href="#" class="stretched-link" data-bs-toggle="modal" data-bs-target="#exampleModal"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" data-bs-toggle="tooltip" data-bs-placement="top" title="Ver Producto">
+                    <img src="img/Postres/PayLimon.jpg" class="card-img-top rounded mx-auto img-thumbnail"
+                        style="width: 16rem;" alt="Limon">
+                    <div class="card-body">
+                        <h5 class="card-title">Pay de Limon</h5>
+                        <p class="card-text">$35</p>
+                    </div>
+                    <div class="card-footer">
+                        <p class="card-text">Disponible: 15</p>
+                        <a href="#" class="stretched-link" data-bs-toggle="modal" data-bs-target="#exampleModal"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" data-bs-toggle="tooltip" data-bs-placement="top" title="Ver Producto">
+                    <img src="img/Postres/payqueso.jpg" class="card-img-top rounded mx-auto img-thumbnail"
+                        style="width: 16rem;" alt="Piña">
+                    <div class="card-body">
+                        <h5 class="card-title">Pay de Queso</h5>
+                        <p class="card-text">$35</p>
+                    </div>
+                    <div class="card-footer">
+                        <p class="card-text">Disponible: 15</p>
+                        <a href="#" class="stretched-link" data-bs-toggle="modal" data-bs-target="#exampleModal"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- offcanvas -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Carrito</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+
+        <div class="offcanvas-body">
+            <div class="row">
+                <div class="card mb-3" style="max-width: 400px;">
+                    <div class="row g-0">
+                        <div class="col-md-4 text-center">
+                            <img src="img/Comida/hamburguesa.png" class="card-img-fluid rounded-start img-thumbnail"
+                                alt="Hamburguesa">
+                            <button type="button" class="btn btn-dark mt-3">Eliminar</button>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h6 class="card-title">Hamburguesa</h6>
+                                <p class="card-text">$35</p>
+                                <h6 class="card-text">Cantidad</h6>
+                                <input type="number" class="form-control" id="cantidad" value="1">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-3" style="max-width: 400px;">
+                    <div class="row g-0">
+                        <div class="col-md-4 text-center">
+                            <img src="img/Comida/hamburguesa.png" class="card-img-fluid rounded-start img-thumbnail"
+                                alt="Hamburguesa">
+                            <button type="button" class="btn btn-dark mt-3">Eliminar</button>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h6 class="card-title">Hamburguesa</h6>
+                                <p class="card-text">$35</p>
+                                <h6 class="card-text">Cantidad</h6>
+                                <input type="number" class="form-control" id="cantidad" value="1">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-3" style="max-width: 400px;">
+                    <div class="row g-0">
+                        <div class="col-md-4 text-center">
+                            <img src="img/Comida/hamburguesa.png" class="card-img-fluid rounded-start img-thumbnail"
+                                alt="Hamburguesa">
+                            <button type="button" class="btn btn-dark mt-3">Eliminar</button>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h6 class="card-title">Hamburguesa</h6>
+                                <p class="card-text">$35</p>
+                                <h6 class="card-text">Cantidad</h6>
+                                <input type="number" class="form-control" id="cantidad" value="1">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-3" style="max-width: 400px;">
+                    <div class="row g-0">
+                        <div class="col-md-4 text-center">
+                            <img src="img/Comida/hamburguesa.png" class="card-img-fluid rounded-start img-thumbnail"
+                                alt="Hamburguesa">
+                            <button type="button" class="btn btn-dark mt-3">Eliminar</button>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h6 class="card-title">Hamburguesa</h6>
+                                <p class="card-text">$35</p>
+                                <h6 class="card-text">Cantidad</h6>
+                                <input type="number" class="form-control" id="cantidad" value="1">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="offcanvas-footer p-2">
+            <div class="row text-center">
+                <div class="col">
+                    <h5>Total a pagar:</h5>
+                </div>
+                <div class="col">
+                    <h6>$345</h6>
+                </div>
+                <button type="button" class="btn btn-warning m-2">Pagar</button>
+            </div>
+            <div class="row">
+            </div>
+        </div>
+    </div>
+    <!-- offcanvas -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header text-light" style="background-color: crimson;">
+                    <h5 class="modal-title" id="exampleModalLabel">Ver producto</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container mt-5">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src="img/Comida/pizza2.png" alt="Producto" class="img-thumbnail">
+                                <div class="form-group p-2">
+                                    <label for="cantidad">Cantidad:</label>
+                                    <input type="number" class="form-control" id="cantidad" value="1">
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <h2>Pizza de Pepperoni</h2>
+                                <p>Descripción del producto:</p>
+                                <p>● De un sabor grandioso, con los mismos ingredientes que hacen agua la boca que
+                                    nuestras pizzas
+                                    masa estilo Hand-Tossed, ¡es perfecta para la comida o como un snack!<br>
+                                    ● Hecha con nuestra salsa original y repleta con queso mozzarella y delicioso
+                                    pepperoni <br>
+                                    ● Esta pizza de pepperoni está siempre deliciosa... porque NO ES DELIVERY. </p>
+                                <p>Precio: $235.00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer text-light" style="background-color: yellow;">
+                    <button type="button" class="btn btn-dark" id="liveToastBtn">Agregar a Carrito</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast -->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <strong class="me-auto">Confirmación</strong>
+                <small>1 mins ago</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                El producto se ha guardado en el carrito
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start text-light" style="background-color: crimson;">
+        <!-- Section: Links  -->
+        <section class="pt-1">
+            <div class="container text-center text-md-start">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto">
+                        <!-- Contenido -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <i class="fas fa-gem me-3 text-secondary"></i>JaguarEats
+                        </h6>
+                        <p>
+                            Cafeteria con 58 años de tradicion dentro del ITVH, contamos con gran variedad en la
+                            venta de alimentos, refrescos, postres, etc.
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Redes Sociales COFFETECNM
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">WhatsApp</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Facebook</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Instagram</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Redes Sociales TECNM
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">Facebook</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Instagram</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">9933 530259</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">Contacto</h6>
+                        <p><i class="fas fa-home me-3 text-secondary"></i>Km. 3.5 Carretera Villahermosa-Frontera, Cd
+                            Industrial</p>
+                        <p>
+                            <i class="fas fa-envelope me-3 text-secondary"></i>
+                            86010 Villahermosa, Tab
+                        </p>
+                        <p><i class="fas fa-phone me-3 text-secondary"></i> + 52 9933 05 8596</p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div class="text-center p-2" style="background-color: rgba(0, 0, 0, 0.025);">
+            © 2023 Copyright:
+            <a class="text-reset fw-bold" href="#">JaguarEats</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+        crossorigin="anonymous"></script>
+
+    <script>
+        var myModal = document.getElementById('myModal')
+        var myInput = document.getElementById('myInput')
+
+        myModal.addEventListener('shown.bs.modal', function () {
+            myInput.focus()
+        })
+    </script>
+
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
+    <script>
+        document.querySelectorAll('#nav-tab>[data-bs-toggle="tab"]').forEach(el => {
+            el.addEventListener('shown.bs.tab', () => {
+                const target = el.getAttribute('data-bs-target')
+                const scrollElem = document.querySelector(`${target} [data-bs-spy="scroll"]`)
+                bootstrap.ScrollSpy.getOrCreateInstance(scrollElem).refresh()
+            })
+        })
+    </script>
+
+    <script>
+        const toastTrigger = document.getElementById('liveToastBtn')
+        const toastLiveExample = document.getElementById('liveToast')
+
+        if (toastTrigger) {
+            const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
+            toastTrigger.addEventListener('click', () => {
+                toastBootstrap.show()
+            })
+        }
+    </script>
+</body>
+
+</html>
